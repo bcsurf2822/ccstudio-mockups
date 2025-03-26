@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coastal Creations Studio - Design Samples</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#1e3a8a",
+              secondary: "#3b82f6",
+              accent: "#f97316",
+              light: "#f0f9ff",
+              dark: "#0f172a",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        overflow-x: hidden;
+      }
+      .preview-container {
+        transition: transform 0.3s ease;
+      }
+      .preview-container:hover {
+        transform: scale(1.02);
+      }
+      .preview-img {
+        border: 1px solid #e5e7eb;
+        transition: all 0.3s ease;
+      }
+      .preview-container:hover .preview-img {
+        border-color: #3b82f6;
+      }
+    </style>
+  </head>
+  <body class="bg-light text-dark">
+    <header class="container mx-auto py-8 px-4">
+      <h1 class="text-4xl font-bold text-center text-primary mb-2">
+        Coastal Creations Studio
+      </h1>
+      <p class="text-xl text-center text-secondary mb-8">
+        Landing Page Design Samples
+      </p>
+      <p class="text-center max-w-2xl mx-auto mb-12">
+        Ashley, below are four different landing page design options for your
+        review.
+      </p>
+    </header>
+
+    <main
+      class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-10 mb-20"
+    >
+      <!-- Design 1 Preview -->
+      <div
+        class="preview-container bg-white rounded-lg shadow-lg overflow-hidden"
+      >
+        <div class="p-6">
+          <h3 class="text-2xl font-bold text-primary mb-4">Design 1</h3>
+
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span
+              class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm"
+              >Gradient Theme</span
+            >
+            <span
+              class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm"
+              >Centered Layout</span
+            >
+            <span
+              class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm"
+              >Coastal Motifs</span
+            >
+          </div>
+          <a
+            href="design1.html"
+            class="inline-flex items-center text-primary hover:text-secondary font-medium"
+          >
+            <span>View Design</span>
+            <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Design 2 Preview -->
+      <div
+        class="preview-container bg-white rounded-lg shadow-lg overflow-hidden"
+      >
+        <div class="p-6">
+          <h3 class="text-2xl font-bold text-primary mb-4">Design 2</h3>
+
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span
+              class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm"
+              >Split Layout</span
+            >
+            <span
+              class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm"
+              >Modern Design</span
+            >
+            <span
+              class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm"
+              >Dark Theme</span
+            >
+          </div>
+          <a
+            href="design2.html"
+            class="inline-flex items-center text-primary hover:text-secondary font-medium"
+          >
+            <span>View Design</span>
+            <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Design 3 Preview -->
+      <div
+        class="preview-container bg-white rounded-lg shadow-lg overflow-hidden"
+      >
+        <div class="p-6">
+          <h3 class="text-2xl font-bold text-primary mb-4">Design 3</h3>
+
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span
+              class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm"
+              >Creative Cards</span
+            >
+            <span
+              class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm"
+              >Interactive Elements</span
+            >
+            <span
+              class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm"
+              >Dynamic Grid</span
+            >
+          </div>
+          <a
+            href="design3.html"
+            class="inline-flex items-center text-primary hover:text-secondary font-medium"
+          >
+            <span>View Design</span>
+            <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Design 4 Preview -->
+      <div
+        class="preview-container bg-white rounded-lg shadow-lg overflow-hidden"
+      >
+        <div class="p-6">
+          <h3 class="text-2xl font-bold text-primary mb-4">Design 4</h3>
+
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span
+              class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm"
+              >Minimalist Style</span
+            >
+            <span
+              class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm"
+              >Premium Look</span
+            >
+            <span
+              class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm"
+              >Elegant Typography</span
+            >
+          </div>
+          <a
+            href="design4.html"
+            class="inline-flex items-center text-primary hover:text-secondary font-medium"
+          >
+            <span>View Design</span>
+            <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-dark text-white py-8"></footer>
+  </body>
+</html>
